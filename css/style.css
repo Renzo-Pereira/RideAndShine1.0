@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 350px auto;
+  grid-template-areas:
+    "header"
+    "contenido";
+    background-color: aliceblue;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/img/fondo.jpg");
+  background-size: cover;
+  background-position: 10%;
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  max-height: 180px;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+li {
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+li:hover {
+  transition: 0.5s;
+  filter: invert(50%);
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+main {
+  grid-area: contenido;
+}
+
+.cartasAlineación {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cartasFondo {
+    max-width: 100%;
+    display: flex;
+    gap: 100px;
+  }
+
+  .cartas {
+    border-radius: 10px;
+    height: 720px;
+    width: 340px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cartas:hover {
+    transform: translate(0px, 10px);
+  }
+
+  .cartasImagen {
+    border-radius: 5%;
+    height: 420px;
+    width: 320px;
+  }
+
+  .cartaTexto {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+.Marca{
+    font-size: 100px;
+    margin-left: 50px;
+}
